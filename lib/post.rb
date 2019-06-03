@@ -14,6 +14,6 @@ class Post
   end
 
   def author_name
-    self.author.name rescue nil
+    author.name if author
   end
 end
